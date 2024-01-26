@@ -2,10 +2,10 @@
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 
-ProductTest();
+//ProductTest();
 //CategoryTest();
 
-static void ProductTest()
+/*static void ProductTest()
 {
     ProductManager productManager = new ProductManager(new EfProductDal());
     var result = productManager.GetProductDetails();
@@ -31,4 +31,4 @@ static void CategoryTest()
         Console.WriteLine(category.CategoryName);
 
     }
-}
+}*/
