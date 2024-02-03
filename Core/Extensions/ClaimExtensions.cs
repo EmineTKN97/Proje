@@ -10,6 +10,7 @@ namespace Core.Extensions
 {
     public static class ClaimExtensions
     {
+        //Bu tür metodlar, bir kullanıcının JWT içinde taşınacak ek bilgilerini tanımlamak ve yetkilendirme bilgilerini temsil etmek için kullanışlıdır. Özellikle, bir kullanıcının e-posta adresi, ismi, tanımlayıcı bilgileri veya rolleri gibi kimlik bilgilerini JWT içinde taşımak istiyorsanız bu metodları kullanabilirsiniz.
         public static void AddEmail(this ICollection<Claim> claims, string email)
         {
             claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));
